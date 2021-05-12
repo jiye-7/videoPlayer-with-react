@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { fakeData } from '../fakeData';
 import Video from './video';
 import '../style/app.css';
 
 class VideoList extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="video__list">
         {
           this.props.videos.map((video) => {
-            return <Video key={video.etag} video={video} />
+            return <Video key={video.etag} video={video} handleClick={this.props.handleClick} />
           })
         }
       </div>
@@ -18,16 +20,3 @@ class VideoList extends Component {
 }
 
 export default VideoList;
-
-
-
-/*
-<div className="videoList">
-        {
-          this.state.videoList.map((video, idx) => {
-            return <Video key={idx} video={video} />
-          })
-        }
-      </div>
-
-*/

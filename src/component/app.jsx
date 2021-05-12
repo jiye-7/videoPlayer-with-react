@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { fakeData } from '../fakeData';
 import VideoList from './videoList';
-import Video from './video';
+import VideoPlay from './videoPlay';
 
 class App extends Component {
   constructor(props) {
@@ -9,12 +9,27 @@ class App extends Component {
 
     this.state = {
       videos: [...fakeData],
+      isClick: false,
+      currentVideo: fakeData[0]
     }
+  }
+
+  handleTitleClick = (video) => {
+    // 여기서 클릭한 비디오의 제목을 받아오고, videoPlay로 넘겨주는 역할을 해야된다.
+    this.setState({
+      isClick: true,
+      currentVideo: video
+    })
   }
 
   render() {
     return (
-      <VideoList videos={this.state.videos} />
+      <main>
+        <div className="video__container">
+          <VideoPlay video={this.state.currentVideo} />
+          <VideoList videos={this.state.videos} handleClick={this.handleTitleClick} />
+        </div>
+      </main>
     );
   }
 }

@@ -5,11 +5,34 @@ body {
   background-color: wheat;
 }
 
+/* main */
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* videoContainer */
+.video__container {
+  display: flex;
+  flex-direction: row;
+}
+
 /* VideoList */
 .video__list {
   display: flex;
   flex-direction: column;
   background-color: rgb(216, 216, 216);
+}
+
+/* Video Play */
+.video__play__area {
+
+}
+
+.video__play__view {
+  width: 600px;
+  height: 400px;
+  background-color: indianred;
 }
 
 /* Video */
@@ -40,4 +63,3 @@ body {
   margin: 5px 0px 20px 0px;
   color: gray;
 }
-

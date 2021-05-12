@@ -20,7 +20,7 @@ export const fakeData = [
       },
       "channelTitle": "Code States",
       "liveBroadcastContent": "none",
-      "publishTime": "2020-02-29T03:53:07Z"
+      "publishTime": "2020-02-29"
     }
   },
   {
@@ -44,7 +44,7 @@ export const fakeData = [
       },
       "channelTitle": "Code States",
       "liveBroadcastContent": "none",
-      "publishTime": "2020-01-30T03:04:42Z"
+      "publishTime": "2020-01-30"
     }
   },
   {
@@ -68,7 +68,7 @@ export const fakeData = [
       },
       "channelTitle": "Code States",
       "liveBroadcastContent": "none",
-      "publishTime": "2020-07-31T13:40:07Z"
+      "publishTime": "2020-07-31"
     }
   }
 ]
